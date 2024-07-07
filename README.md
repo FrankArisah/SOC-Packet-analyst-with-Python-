@@ -1,6 +1,6 @@
 # SOC-Packet-analyst-with-Python-
 
-Upon writing and further debbuging a script to analyze SMB packets from the PCAP file provided, extract attachments, and gather metadata, I concluded
+Upon writing and further debbuging a script to analyze SMB packets from the PCAP file provided, extract attachments, and gather metadata, I concluded;
 
 1. The PCAP file contains SMBv2 traffic. Evidenced by the presence of SMB2_Header and various SMB2 request/response layers.
 
