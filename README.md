@@ -20,11 +20,19 @@ Upon writing and further debbuging a script to analyze SMB packets from the PCAP
 
 Given this information, I modified my approach. I focused on gathering metadata about the SMB operations. 
 
-To run the script:
+__How to Run the Script__
 
-Save it as ```smb_extractor.py```
+Save it as 
 
-Run it with: ```python3 smb_extractor.py smb.pcap```
+```smb_extractor.py```
+
+Ensure dependencies are installed
+
+```pip install scapy```
+
+Run the script
+
+ ```python3 smb_extractor.py smb.pcap```
 
 This should create a smb_metadata.json file containing information about the SMB operations, including timestamps, IP addresses, ports, and SMB commands. It will attempt to include filenames and file sizes when available, but won't raise an error if these fields are missing.
 
